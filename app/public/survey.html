@@ -5,6 +5,7 @@
     <title>FRIEND FINDER SURVEY!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
 </head>
 
@@ -12,18 +13,18 @@
     <div class="container">
         <br />
         <h1>FRIEND FINDER SURVEY</h1>
-        <a class="btn btn-primary" style="float: right;" href="home.html" role="button">PREVIOUS PAGE</a>
+        <a class="btn btn-primary" style="float: right;" href="/" role="button">PREVIOUS PAGE</a>
         <br />
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Enter your email (Required) or Full Name(Required)</label>
-                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email or Full Name">
+                <label for="exampleInputEmail1">Full Name(Required)</label>
+                <input type="name" class="form-control" id="fullName" aria-describedby="emailHelp"
+                    placeholder="Full Name">
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="IMAGE">
+                <input type="image" class="form-control" id="ffImage" placeholder="IMAGE">
             </div>
 
             <!-- QUESTIONS AND SELECTS -->
@@ -31,173 +32,266 @@
             <h2>Question 1:</h2>
             <h3>Do you enjoy playing video-games alot?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                </button> -->
+                <select id = "q1">
+                    <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                    <option class="dropdown-item" href="#">2</option>
+                    <option class="dropdown-item" href="#">3</option>
+                    <option class="dropdown-item" href="#">4</option>
+                    <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                </select>
             </div>
             <br/>
             <h2>Question 2:</h2>
             <h3>Do you like manually jobs(Construction, Fast Food etc.)?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                </button> -->
+                <select id = "q2">
+                        <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                        <option class="dropdown-item" href="#">2</option>
+                        <option class="dropdown-item" href="#">3</option>
+                        <option class="dropdown-item" href="#">4</option>
+                        <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
             </div>
             <br/>
             <h2>Question 3:</h2>
             <h3>Do you like gambling?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                </button> -->
+                <select id = "q3">
+                        <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                        <option class="dropdown-item" href="#">2</option>
+                        <option class="dropdown-item" href="#">3</option>
+                        <option class="dropdown-item" href="#">4</option>
+                        <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                </select>
             </div>
             <br/>
             <h2>Question 4:</h2>
             <h3>Do you like exploring uncharted places that you never went to?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                <select id = "q4">
+                        <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                        <option class="dropdown-item" href="#">2</option>
+                        <option class="dropdown-item" href="#">3</option>
+                        <option class="dropdown-item" href="#">4</option>
+                        <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                </select>
             </div>
             <br/>
             <h2>Question 5:</h2>
             <h3>Are you religious?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                
+                    <select id = "q5">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                        </select>
             </div>
             <br/>
             <h2>Question 6:</h2>
             <h3>Do you like Horror movies?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+              
+                    <select id = "q6">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
             </div>
             <br/>
             <h2>Question 7:</h2>
             <h3>Do you enjoy reading books, comics?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                
+                    <select id = "q7">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
             </div>
             <br/>
             <h2>Question 8:</h2>
             <h3>Do like space?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+             
+                    <select id = "q8">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
             </div>
             <br/>
             <h2>Question 9:</h2>
             <h3>Do you like meeting new people even if that people disagrees with you alot?</h3>
             <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
-                </div>
+                
+                    <select id = "q9">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
             </div>
             <br/>
             <h2>Question 10:</h2>
             <h3>Do you like drinking alcohol?</h3>
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Select Here
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">1(Heavily Disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(Heavily Agree)</a>
+            <div class="dropdown" id="showButton">
+             
+                    <select id = "q10">
+                            <option class="dropdown-item" href="#">1(Heavily Disagree)</option>
+                            <option class="dropdown-item" href="#">2</option>
+                            <option class="dropdown-item" href="#">3</option>
+                            <option class="dropdown-item" href="#">4</option>
+                            <option class="dropdown-item" href="#">5(Heavily Agree)</option>
+                    </select>
+                <div class="row">
+                    <div class="col" id="resultButton">
+
+                    </div>
                 </div>
             </div>
             <br/>
             <br/>
             <!--submit button\/\/\/\/\/-->
-            <!-- <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button type="submit" class="btn btn-primary">Submit</button>
+        
+            <button type="submit" class="btn btn-primary" style="display:none;" id="showBtnAfterClick">
+                <a class="btn btn-primary" href="/api/friends" role="button">FIND FRIEND(submit)</a>
+            </button>
+            <!--Want to send the client to show its closes friend(s) after the client clicks the button above-->
+
         </form>
     </div>
     <br/>
     <br/>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+          // In this code, jQuery is used to "download" the data from our server
+  // We then dynamically display this content in our table. This is very similar to the group projects you just completed.
+  // It's also very similar to the NYT search application. In fact, I copied a ton of code from there.
+//   function showButton() {
+//          return $("showBtnAfterClick").show();
+//   };
+// $('#showBtnAfterClick').hide();
+//   $(document).ready(function(){
+//             function showButton() {
+//                 $("showBtnAfterClick").css("display: block;");
+
+//             };
+//             // $('#showBtnAfterClick').hide();
+//             $('#showBtnAfterClick').on('click', showButton);
+//     });
+
+  function FindFriends() {
+      var data = {
+          name: [$("#fullName").val()],
+          picture: [$("#ffImage").val()],
+          scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(),
+          $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+    };
+  
+    
+
+    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+    $.ajax({ url: "/api/friends", type: "POST", data: data }) //make a button so client can see what is the closer friend
+      .then(function(showFriends) {
+        return $( "#resultButton" ).add( "button" ).addClass( "findTheFriend" );
+        //make a button    ------------------------------------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        // function showButton() {
+        //         $("showBtnAfterClick").css("display: block;");
+
+        // };
+        // $(document).ready(function(){
+        //      $('#showBtnAfterClick').hide();
+        //      $('#q10').on('click', showButton);
+        // });
+             
+    }); 
+};
+        
+// };
+//   //CWCL20181009FSF
+// //   function runWaitListQuery() {
+
+// //     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+// //     $.ajax({ url: "/api/waitlist", method: "GET" })
+// //       .then(function(waitData) {
+
+// //         // Here we then log the waitlistData to console, where it will show up as an object.
+// //         console.log(waitData);
+// //         console.log("------------------------------------");
+
+// //         // Loop through and display each of the customers
+// //         for (var i = 0; i < waitData.length; i++) {
+
+// //           // Get a reference to the waitList element and populate it with tables
+// //           var waitList = $("#waitList");
+
+// //           // Then display the fields in the HTML (Section Name, Date, URL)
+// //           var listItem = $("<li class='list-group-item mt-4'>");
+
+// //           listItem.append(
+// //             $("<h2>").text("Table #" + (i + 1)),
+// //             $("<hr>"),
+// //             $("<h2>").text("ID: " + waitData[i].customerID),
+// //             $("<h2>").text("Name: " + waitData[i].customerName),
+// //             $("<h2>").text("Email: " + waitData[i].customerEmail),
+// //             $("<h2>").text("Phone: " + waitData[i].phoneNumber)
+// //           );
+
+// //           waitList.append(listItem);
+// //         }
+// //       });
+// //   }
+
+// //   // This function resets all of the data in our tables. This is intended to let you restart a demo.
+// //   function clearTable() {
+// //     alert("Clearing...");
+
+// //     // Clear the tables on the server and then empty the elements on the client
+// //     $.ajax({ url: "/api/clear", method: "POST" }).then(function() {
+// //       $("#waitList").empty();
+// //       $("#tableList").empty();
+// //     });
+// //   }
+
+// //   $("#clear").on("click", clearTable);
+
+
+//   // Run Queries!
+//   // ==========================================
+  FindFriends();
+  
+
+    
+    </script>
 </body>
 
 </html>

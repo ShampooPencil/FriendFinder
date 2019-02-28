@@ -2,6 +2,8 @@
 // =============================================================
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+var bodyParser = require("body-parser");
 //express , path , and init -y are installed(checked off****)
 
 // Sets up the Express App
@@ -17,8 +19,8 @@ app.use(express.static('files'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("/routes/apiRoutes.js")(app);
-require("/routes/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 
 app.get("/", function (req, res) {

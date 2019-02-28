@@ -22,24 +22,17 @@ module.exports = function(app) {
         // In each of the below cases when a user visits a link
         // ---------------------------------------------------------------------------
       
-        app.get("/api/friend", function(req, res) {
+        app.get("/api/friends", function(req, res) {
           console.log("TESTING");
           res.json(dataFF);
         });
 
-        app.post("/api/tables", function(req, res) {
-            // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-            // It will do this by sending out the value "true" have a table
-            // req.body is available since we're using the body parsing middleware
-            if (tableData.length < 5) {
-              tableData.push(req.body);
-              res.json(true);
-            }
-            else {
-              waitListData.push(req.body);
-              res.json(false);
-            }
-          });
+        app.post("/api/friends", function(req, res) {
+          console.log("Tesing");
+
+          
+          
+      });
     };
 
 // friends.POST('/api/friends', (req, res) => { //POST IS FOR HANDLING INCOMING SURVEY RESULTS
