@@ -9,7 +9,7 @@ var bodyParser = require("body-parser");
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // To use multiple static assets directories, call the express.static middleware function multiple times:
 //app.use(express.static(__dirname + '/public'));
